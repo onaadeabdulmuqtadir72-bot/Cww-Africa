@@ -423,6 +423,7 @@ section:nth-of-type(7) main button{
    border-radius: 4px;
 }
 
+
 section:nth-of-type(7) hr{
     margin: 20px 0 0 0;
     width: 100%;
@@ -861,7 +862,7 @@ section:nth-of-type(6) img{
 
 section:nth-of-type(7) aside div{
     margin: 0 15px;
-    display: block;
+    display: inline-block;
     background-color: white;
     padding: 10px 25px;
 }
@@ -944,6 +945,11 @@ section:nth-of-type(2)>nav{
 section:nth-of-type(2)>main div{
     width: 45%;
     margin: 2%;
+}
+
+.timer{
+    /* width: 100px; */
+    /* display: inline-block; */
 }
 
 section:nth-of-type(2)>main div img{
