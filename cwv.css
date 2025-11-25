@@ -1037,12 +1037,15 @@ section:nth-of-type(6) img{
 }
 
 section:nth-of-type(7) nav a{
-    font-size: 25px;
+    font-size: 30px;
+}
+
+section:nth-of-type(7) nav{
+    width: 100%;
 }
 
 section:nth-of-type(7) aside{
   padding: 20px 0;
-  /* border: 1px solid red; */
   width: 100%;
 }
 
@@ -1051,9 +1054,9 @@ section:nth-of-type(7){
 }
 
 section:nth-of-type(7) aside div{
-    margin: 0 10px;
+    margin: 0 15px;
     background-color: white;
-    padding: 5px 10px;
+    padding: 10px 30px;
 }
 
 
