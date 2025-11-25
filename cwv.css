@@ -1041,6 +1041,7 @@ section:nth-of-type(7) nav a{
 section:nth-of-type(7) aside{
   padding: 0;
   align-items: center;
+  width: 900px;
 }
 
 
