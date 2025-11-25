@@ -1054,9 +1054,9 @@ section:nth-of-type(7){
 }
 
 section:nth-of-type(7) aside div{
-    margin: 0 15px;
+    margin: 0 12px;
     background-color: white;
-    padding: 10px 30px;
+    padding: 5px 24px;
 }
 
 
