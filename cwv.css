@@ -1,0 +1,1123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: lightgrey;
+}
+
+header div:nth-of-type(1){
+    display: flex;
+    align-items: center;
+}
+
+header div:nth-of-type(1) nav{
+    margin-left: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+header div:nth-of-type(3) button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: navy;
+    border: none;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 2px 2px 0 yellow;
+}
+
+
+section:nth-of-type(1){
+    position: relative; /* Added for pseudo-element positioning */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 50px; /* Increased to accommodate the fade */
+    overflow: hidden;
+}
+
+/* Create the blue fade effect at the bottom */
+section:nth-of-type(1)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px; /* Height of the fade effect */
+    background: linear-gradient(to bottom, 
+        rgba(37, 99, 235, 0) 0%,
+        rgba(37, 99, 235, 0.1) 40%,
+        rgba(37, 99, 255, 1.0) 100%
+    );
+    border-radius: 0 0 10% 0 / 0 0 80% 80%; /* Creates the curved bottom */
+    pointer-events: none; /* Allows clicking through the overlay */
+}
+
+section:nth-of-type(1) div h1{
+    font-size: 85px;
+    font-weight: 700;
+}
+
+section:nth-of-type(1) div p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+section:nth-of-type(1) div button{
+    padding: 3% 5%;
+    border-radius: 4px;
+    background-color: navy;
+    color: white;
+    box-shadow: 0 2px 2px 0 yellow;
+}
+
+
+section:nth-of-type(2){
+ /* background-color: lightgrey; */
+}
+
+section:nth-of-type(2)>nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 50px 170px 0 100px;
+}
+
+section:nth-of-type(2)>nav div h2{
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+}
+
+section:nth-of-type(2)>nav div h6{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section:nth-of-type(2)>nav aside button{
+    font-size: 16px;
+    padding: 15px 25px;
+    background-color: navy;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+
+section:nth-of-type(2)>summary{
+    text-align: end;
+    padding: 50px 170px 0 0;
+}
+
+section:nth-of-type(2)>summary .fa-angle-left {
+    padding: 10px 25px 10px 20px;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 1px solid hsl(0, 0%, 50%);
+}
+
+
+section:nth-of-type(2)>summary .fa-angle-right {
+    padding: 10px 25px 10px 20px;
+    font-size: 20px;
+    margin: 0 4px;
+    border-radius: 2px;
+    border: 1px solid hsl(0, 0%, 50%);
+}
+
+section:nth-of-type(2)>main{
+    display: flex;
+    flex-wrap: wrap;
+     margin-top: 20px;
+    padding: 0 100px;
+}
+
+
+section:nth-of-type(2)>main div{
+  margin: 0 10px;
+}
+
+section:nth-of-type(2)>main div h5{
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family:italic;
+}
+
+
+section:nth-of-type(2)>main div p{
+  font-size: 20px;
+  color: hsl(0, 0%, 30%);
+  line-height: 30px;
+}
+
+
+section:nth-of-type(2)>main div a{
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(0, 0%, 30%);
+  text-decoration: none;
+  line-height: 50px;
+}
+
+section:nth-of-type(3){
+    margin: 80px 0;
+}
+
+section:nth-of-type(3)>nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 0 90px;
+}
+
+section:nth-of-type(3)>nav button{
+    padding: 15px 35px;
+    background-color: navy;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+section:nth-of-type(3)>nav h2{
+  color: navy;
+  font-size: 43px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section:nth-of-type(3)>nav h6{
+  color: black;
+  font-size: 22px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section:nth-of-type(3)>main{
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 0 100px;
+}
+
+section:nth-of-type(3)>main div img{
+    margin: 0 8px;
+}
+
+
+section:nth-of-type(3)>main div h5{
+   color: hsl(0, 0%, 20%);
+   margin:30px 0 10px 0;
+   font-size: 20px;
+   font-family: italic;
+}
+
+section:nth-of-type(3)>main div p{
+    font-weight: 550;
+}
+
+
+section:nth-of-type(4){
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+section:nth-of-type(4) div:nth-of-type(1){
+    /* border: 1px solid red; */
+    margin-top: 60px;
+}
+
+
+section:nth-of-type(4) img{
+    border-radius: 15px 15px 15px 120px;
+}
+
+section:nth-of-type(4) h2{
+    font-size: 43px;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(4) p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+section:nth-of-type(4) button{
+    padding: 15px 30px;
+    background-color: navy;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+}
+
+
+
+
+
+section:nth-of-type(5){
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+
+section:nth-of-type(5) ul{
+    list-style-type: disc;
+    font-size: 19px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+section:nth-of-type(5) div:nth-of-type(2){
+    /* border: 1px solid red; */
+    margin-top: 30px;
+}
+
+
+section:nth-of-type(5) img{
+    border-radius: 0 0 100px 0;
+}
+
+section:nth-of-type(5) h2{
+    font-size: 25px;
+    color: navy;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section:nth-of-type(5) p{
+    margin: 20px 0;
+}
+
+section:nth-of-type(5)>p li{
+   
+}
+
+section:nth-of-type(5) h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    color: navy;
+}
+
+
+section:nth-of-type(5) button{
+    padding: 15px 30px;
+    background-color: navy;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+
+
+section:nth-of-type(6){
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+section:nth-of-type(6) div:nth-of-type(1){
+    /* border: 1px solid red; */
+    margin-top: 60px;
+}
+
+
+section:nth-of-type(6) h2{
+    font-size: 39px;
+    color: navy;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section:nth-of-type(6) p{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+section:nth-of-type(6) button{
+    padding: 15px 30px;
+    background-color: navy;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+}
+
+
+section:nth-of-type(7){
+    text-align: center;
+    background-color: hsl(0, 0%, 96%);
+    margin: 30px 0 0 0;
+    padding: 30px 0;
+}
+
+
+section:nth-of-type(7) nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 38px;
+}
+
+section:nth-of-type(7) aside{
+    display: flex;
+    margin: 30px 50px;
+    /* border: 1px solid red; */
+    padding: 0 26%;
+}
+
+
+section:nth-of-type(7) aside div{
+    margin: 0 15px;
+    background-color: white;
+    padding: 10px 25px;
+}
+
+section:nth-of-type(7) aside div h2{
+    font-size: 50px;
+}
+
+section:nth-of-type(7) aside div p{
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+}
+
+section:nth-of-type(7) main button{
+   padding: 15px 20px;
+   color: white;
+   background-color: navy;
+   border: none;
+   font-size: 18px;
+   font-weight: 700;
+   border-radius: 4px;
+}
+
+section:nth-of-type(7) hr{
+    margin: 20px 0 0 0;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    height: 3px;
+    border: none;
+    background-color: hsl(0, 0%, 50%);
+}
+
+section:nth-of-type(8){
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 50px;
+    background-color: navy;
+    color: white;
+}
+
+section:nth-of-type(8) h4{
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: 500;
+    font-family: italic;
+}
+
+section:nth-of-type(8) p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+section:nth-of-type(9){
+    background-color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+section:nth-of-type(9) h2{
+    font-size: 53px;
+    color: navy;
+    line-height: 100px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.fa-heart{
+    color: mediumvioletred;
+}
+
+
+section:nth-of-type(9) nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section:nth-of-type(9) nav h3{
+    font-size: 60px;
+}
+
+section:nth-of-type(9) nav p{
+    font-size: 16px;
+}
+
+section:nth-of-type(10){
+    margin-top: 70px;
+    text-align: center;
+    background-color: white;
+}
+
+section:nth-of-type(10) p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section:nth-of-type(10) h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+section:nth-of-type(10) h4{
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+section:nth-of-type(10) span{
+  font-family: italic,cursive;
+  font-size: 14px;
+}
+
+section:nth-of-type(10) img{
+    border-radius: 80px;
+    margin-bottom: 40px;
+}
+
+section:nth-of-type(10)>div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+section:nth-of-type(11){
+    text-align: center;
+}
+
+
+section:nth-of-type(11) h2{
+   font-size: 40px;
+   font-weight: 900;
+   font-family: italic;
+}
+
+
+section:nth-of-type(11) p{
+  font-size: 16px;
+  margin: 25px 0 50px 0;
+}
+
+section:nth-of-type(11) input{
+    width: 50%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid blue;
+    outline: none;
+}
+
+
+section:nth-of-type(11) input:hover{
+    border: 1px solid yellow;
+    background-color: lightblue;
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+
+section:nth-of-type(11) button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: #f3C01E;
+    font-size: 18px;
+    margin-right: 42%;
+}
+
+section:nth-of-type(11) button:hover{
+    background-color: skyblue;
+}
+
+section:nth-of-type(12) td{
+   padding: 20px;
+}
+
+section:nth-of-type(12){
+    margin-top: 50px;
+    text-align: center;
+}
+
+section:nth-of-type(12) h2{
+    font-size: 45px;
+    line-height: 100px;
+    color: hsl(0, 0%, 10%);
+    font-family: italic;
+}
+
+section:nth-of-type(12) div button{
+   width: 60%;
+   text-align: left; 
+   padding: 15px 16px; 
+   font-weight: 600;
+   border: 1px solid hsl(0, 0%, 60%);
+}
+
+section:nth-of-type(12) nav button{
+    padding: 15px 12px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: navy;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+
+footer{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 50px 0 0 0;
+    margin-top: 50px;
+}
+
+
+footer div h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: italic;
+    line-height: 50px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer summary{
+    padding-top: 10px;
+}
+
+footer summary h3{
+    margin: 30px 0;
+}
+
+footer summary aside{
+    font-size: 25px;
+}
+
+footer summary aside a{
+    color: white;
+    margin: 0 8px;
+}
+
+footer input{
+  width: 60%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 15px ;
+}
+
+footer button{
+    border: none;
+    border-radius: 4px;
+    background-color: yellow;
+     padding: 15px 23px ;
+}
+
+footer figure{
+    background-color: black;
+    padding: 20px 0;
+}
+
+
+.footer-bottom{
+    text-align: center;
+}
+
+footer figure aside a{
+    text-align: end;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 90%;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+footer figure a i{
+    color: green;
+    font-size: 20px;
+}
+
+
+
+
+
+/* stoner media querry ipad */
+
+@media (max-width:1024px) {
+
+    header>div:nth-of-type(2){
+        display: none;
+    }
+
+    header>div:nth-of-type(1) nav{
+        display: block;
+    }
+
+
+  header > div:nth-of-type(3){
+    display: block;
+  }
+
+
+    section:nth-of-type(1){
+        padding: 50px 30px 0 0;
+    }
+
+
+section:nth-of-type(2)>main div:nth-of-type(3),div:nth-of-type(4) {
+    display: none;
+}
+
+
+section:nth-of-type(2)>main{
+    padding: 0;
+}
+
+section:nth-of-type(2)>main div{
+    width:30%;
+    margin:0 18% 0 2%;
+}
+
+section:nth-of-type(2)>main div h5,p,a{
+    font-size: 30px;
+}
+
+section:nth-of-type(2)>main div img{
+    width: 100%;
+}
+
+
+section:nth-of-type(2)>nav{
+    display: block;
+    padding: 15px 20px;
+}
+
+section:nth-of-type(2)>nav div{
+    margin: 20px 0;
+}
+
+section:nth-of-type(2)>summary{
+    text-align: end;
+    padding: 0;
+}
+
+
+section:nth-of-type(3){
+    margin-top: 50px;
+}
+
+section:nth-of-type(3)>main div{
+    width: 25%;
+    margin: 1%;
+    display: block;
+}
+
+section:nth-of-type(3)>main div img{
+    width:100%;
+}
+
+section:nth-of-type(3)>main div h5{
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+}
+
+section:nth-of-type(3)>main div p{
+    font-size: 22px;
+    color: hsl(0, 0%, 20%);
+}
+
+section:nth-of-type(3)>nav{
+   padding: 0 50px;
+   display: block;
+}
+
+section:nth-of-type(3)>nav button{
+    margin-top: 20px;
+}
+
+section:nth-of-type(3)>main{
+    padding:0;
+}
+
+
+section:nth-of-type(4){
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+section:nth-of-type(4) img{
+    border-radius: 15px 15px 15px 120px;
+}
+
+section:nth-of-type(4) h2{
+    font-size: 32px;
+    color: navy;
+}
+
+section:nth-of-type(4) p{
+    font-size: 16px;
+}
+
+section:nth-of-type(4) img{
+    width: 500px;
+}
+
+section:nth-of-type(5){
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+section:nth-of-type(5) img{
+    border-radius: 15px 15px 15px 120px;
+}
+
+section:nth-of-type(5) h2{
+    font-size: 32px;
+    color: navy;
+}
+
+section:nth-of-type(5) p{
+    font-size: 16px;
+}
+
+section:nth-of-type(5) img{
+    width: 470px;
+}
+
+
+section:nth-of-type(6){
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+section:nth-of-type(6) h2{
+    font-size: 32px;
+    color: navy;
+}
+
+section:nth-of-type(6) p{
+    font-size: 14px;
+}
+
+section:nth-of-type(6) img{
+    width: 450px;
+}
+
+section:nth-of-type(7) aside div{
+    margin: 0 15px;
+    display: block;
+    background-color: white;
+    padding: 10px 25px;
+}
+
+
+section:nth-of-type(7) aside{
+    padding: 0 19%;
+}
+
+section:nth-of-type(8) img{
+    width: 90%;
+}
+
+section:nth-of-type(8){
+    padding: 40px 20px;
+}
+
+section:nth-of-type(8) h4{
+    font-size: 28px;
+}
+
+section:nth-of-type(8) p{
+    font-size: 13px;
+    line-height: 25px;
+}
+
+
+}
+
+
+
+
+
+/* stoner media querry mobile */
+
+@media (max-width:770px){
+    header button{
+        display: none;
+    }
+
+      header div:nth-of-type(1){
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+
+      header{
+        padding: 0 20px 0 10px;
+      }
+
+    section:nth-of-type(1){
+        display: block;
+        padding: 50px 40px;
+    }
+
+
+     section:nth-of-type(1) img{
+        width: 300px;
+        margin: 20px 0 0 0;
+     }
+
+
+    section:nth-of-type(1) div h1{
+    font-size: 50px;
+    display: inline;
+}
+
+section:nth-of-type(1) nav{
+    text-align: center;
+}
+
+section:nth-of-type(2)>main img{
+    width: 200px;
+}
+
+section:nth-of-type(2)>nav{
+   padding: 10px 50px;
+}
+
+section:nth-of-type(2)>main div{
+    width: 45%;
+    margin: 2%;
+}
+
+section:nth-of-type(2)>main div img{
+    width: 100%;
+}
+
+section:nth-of-type(2)>main div h5,p,a{
+    font-size: 20px;
+}
+
+section:nth-of-type(3)>main{
+    display:block;
+    padding: 50px;
+}
+
+section:nth-of-type(3)>main div{
+   width: 100%;
+   margin: 20px 0;
+}
+
+
+section:nth-of-type(3)>main div h5{
+   margin: 10px 0;
+}
+
+section:nth-of-type(3)>nav{
+    display: block;
+    padding: 15px 80px;
+}
+
+section:nth-of-type(4){
+    display: block;
+    margin: auto;
+    width: 95%;
+}
+
+section:nth-of-type(4) p{
+    font-size: 15px;
+}
+
+section:nth-of-type(4) img{
+    width: 100%;
+    margin: 50px 0 150px 0;
+}
+
+section:nth-of-type(5){
+    display: block;
+    margin: auto;
+    width: 95%;
+
+}
+
+section:nth-of-type(5) h1{
+    margin: 20px 0;
+    font-size: 50px;
+}
+
+
+section:nth-of-type(5) div:nth-of-type(2){
+    margin-bottom: 150px;
+}
+
+section:nth-of-type(5) img{
+    border-radius: 15px 15px 120px 15px;
+    width: 110%;
+
+}
+
+section:nth-of-type(6){
+    display: block;
+    margin: auto;
+    width: 95%;
+
+}
+
+section:nth-of-type(6) p{
+    font-size: 10px;
+}
+
+section:nth-of-type(6) img{
+    width: 100%;
+    margin: 50px 0 150px 0;
+}
+
+section:nth-of-type(7) nav a{
+    font-size: 40px;
+}
+
+section:nth-of-type(7) aside{
+  padding: 0;
+  margin-left: 0;
+}
+
+
+section:nth-of-type(7) aside div{
+    padding: 8px 17px;
+}
+
+section:nth-of-type(7) aside div h2{
+    font-size: 35px;
+}
+
+section:nth-of-type(7) aside div p{
+   font-size: 10px;
+}
+
+
+section:nth-of-type(8) img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+section:nth-of-type(8){
+    display: block;
+}
+
+section:nth-of-type(8) h4{
+    font-size: 28px;
+}
+
+section:nth-of-type(8) p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+section:nth-of-type(10)>div{
+    display: block;
+}
+
+section:nth-of-type(10)>div div{
+   margin-top: 50px;
+}
+
+section:nth-of-type(10) h4{
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 40px;
+}
+
+section:nth-of-type(10) p{
+    font-size: 20px;
+}
+
+section:nth-of-type(10) span{
+    font-size: 15px;
+}
+
+
+section:nth-of-type(10) img{
+    margin-bottom: 0;
+}
+
+section:nth-of-type(11) button{
+    margin: auto;
+}
+
+
+
+footer nav{
+    display: block;
+    margin-left: 15px;
+}
+  
+footer>figure{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer figure aside a{
+    margin-left: 0%;
+    padding: 8px 0;
+}
+
+footer figure div p{
+    font-size: 15px;
+}
+
+}
