@@ -975,19 +975,20 @@ section:nth-of-type(2)>main div img{
 }
 
 section:nth-of-type(2)>main div h5{
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 15px;
 }
 
 
 section:nth-of-type(2)>main div p span{
-  font-size: 10px;
+  font-size: 13px;
   color: hsl(0, 0%, 30%);
   line-height: 10px;
 }
 
 
 section:nth-of-type(2)>main div a{
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 600;
   color: hsl(0, 0%, 30%);
   text-decoration: none;
