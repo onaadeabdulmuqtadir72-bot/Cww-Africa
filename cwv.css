@@ -988,11 +988,11 @@ section:nth-of-type(2)>main div p span{
 
 
 section:nth-of-type(2)>main div a{
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 600;
   color: hsl(0, 0%, 30%);
   text-decoration: none;
-  line-height: 5px;
+  line-height: normal;
 }
 
 
