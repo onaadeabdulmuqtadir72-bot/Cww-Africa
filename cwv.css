@@ -45,7 +45,7 @@ header div:nth-of-type(3) button{
 }
 
 
-section:nth-of-type(1){
+.hero{
     position: relative; /* Added for pseudo-element positioning */
     display: flex;
     justify-content: space-around;
@@ -56,7 +56,7 @@ section:nth-of-type(1){
 }
 
 /* Create the blue fade effect at the bottom */
-section:nth-of-type(1)::after {
+.hero::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -72,18 +72,18 @@ section:nth-of-type(1)::after {
     pointer-events: none; /* Allows clicking through the overlay */
 }
 
-section:nth-of-type(1) div h1{
+.hero div h1{
     font-size: 85px;
     font-weight: 700;
 }
 
-section:nth-of-type(1) div p{
+.hero div p{
     font-size: 18px;
     font-weight: 400;
     margin: 30px 0;
 }
 
-section:nth-of-type(1) div button{
+.hero div button{
     padding: 3% 5%;
     border-radius: 4px;
     background-color: navy;
@@ -92,18 +92,18 @@ section:nth-of-type(1) div button{
 }
 
 
-section:nth-of-type(2){
+.popular-courses{
  /* background-color: lightgrey; */
 }
 
-section:nth-of-type(2)>nav{
+.popular-courses>nav{
    display: flex;
    align-items: center;
    justify-content: space-between;
    padding: 50px 170px 0 100px;
 }
 
-section:nth-of-type(2)>nav div h2{
+.popular-courses>nav div h2{
     font-size: 45px;
     line-height: 40px;
     font-weight: 700;
@@ -111,13 +111,13 @@ section:nth-of-type(2)>nav div h2{
     color: navy;
 }
 
-section:nth-of-type(2)>nav div h6{
+.popular-courses>nav div h6{
     font-size: 20px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section:nth-of-type(2)>nav aside button{
+.popular-courses>nav aside button{
     font-size: 16px;
     padding: 15px 25px;
     background-color: navy;
@@ -126,12 +126,12 @@ section:nth-of-type(2)>nav aside button{
     border: none;
 }
 
-section:nth-of-type(2)>summary{
+.popular-courses>summary{
     text-align: end;
     padding: 50px 170px 0 0;
 }
 
-section:nth-of-type(2)>summary .fa-angle-left {
+.popular-courses>summary .fa-angle-left {
     padding: 10px 25px 10px 20px;
     font-size: 20px;
     border-radius: 2px;
@@ -139,7 +139,7 @@ section:nth-of-type(2)>summary .fa-angle-left {
 }
 
 
-section:nth-of-type(2)>summary .fa-angle-right {
+.popular-courses>summary .fa-angle-right {
     padding: 10px 25px 10px 20px;
     font-size: 20px;
     margin: 0 4px;
@@ -147,7 +147,7 @@ section:nth-of-type(2)>summary .fa-angle-right {
     border: 1px solid hsl(0, 0%, 50%);
 }
 
-section:nth-of-type(2)>main{
+.popular-courses>main{
     display: flex;
     flex-wrap: wrap;
      margin-top: 20px;
@@ -155,11 +155,11 @@ section:nth-of-type(2)>main{
 }
 
 
-section:nth-of-type(2)>main div{
+.popular-courses>main div{
   margin: 0 10px;
 }
 
-section:nth-of-type(2)>main div h5{
+.popular-courses>main div h5{
   font-size: 30px;
   line-height: 50px;
   font-weight: 600;
@@ -167,14 +167,14 @@ section:nth-of-type(2)>main div h5{
 }
 
 
-section:nth-of-type(2)>main div p{
+.popular-courses>main div p{
   font-size: 20px;
   color: hsl(0, 0%, 30%);
   line-height: 30px;
 }
 
 
-section:nth-of-type(2)>main div a{
+.popular-courses>main div a{
   font-size: 20px;
   font-weight: 600;
   color: hsl(0, 0%, 30%);
@@ -182,18 +182,18 @@ section:nth-of-type(2)>main div a{
   line-height: 50px;
 }
 
-section:nth-of-type(3){
+.popular-programmes{
     margin: 80px 0;
 }
 
-section:nth-of-type(3)>nav{
+.popular-programmes>nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 200px 0 90px;
 }
 
-section:nth-of-type(3)>nav button{
+.popular-programmes>nav button{
     padding: 15px 35px;
     background-color: navy;
     color: white;
@@ -201,70 +201,70 @@ section:nth-of-type(3)>nav button{
     border: none;
 }
 
-section:nth-of-type(3)>nav h2{
+.popular-programmes>nav h2{
   color: navy;
   font-size: 43px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-section:nth-of-type(3)>nav h6{
+.popular-programmes>nav h6{
   color: black;
   font-size: 22px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-section:nth-of-type(3)>main{
+.popular-programmes>main{
     margin-top: 20px;
     /* border: 1px solid red; */
     display: flex;
     padding: 0 100px;
 }
 
-section:nth-of-type(3)>main div img{
+.popular-programmes>main div img{
     margin: 0 8px;
 }
 
 
-section:nth-of-type(3)>main div h5{
+.popular-programmes>main div h5{
    color: hsl(0, 0%, 20%);
    margin:30px 0 10px 0;
    font-size: 20px;
    font-family: italic;
 }
 
-section:nth-of-type(3)>main div p{
+.popular-programmes>main div p{
     font-weight: 550;
 }
 
 
-section:nth-of-type(4){
+.hire-intern{
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
 }
 
-section:nth-of-type(4) div:nth-of-type(1){
+.hire-intern div:nth-of-type(1){
     /* border: 1px solid red; */
     margin-top: 60px;
 }
 
 
-section:nth-of-type(4) img{
+.hire-intern img{
     border-radius: 15px 15px 15px 120px;
 }
 
-section:nth-of-type(4) h2{
+.hire-intern h2{
     font-size: 43px;
     color: navy;
     margin-bottom: 20px;
 }
 
-section:nth-of-type(4) p{
+.hire-intern p{
     font-size: 18px;
     line-height: 30px;
 }
 
-section:nth-of-type(4) button{
+.hire-intern button{
     padding: 15px 30px;
     background-color: navy;
     border-radius: 5px;
@@ -279,7 +279,7 @@ section:nth-of-type(4) button{
 
 
 
-section:nth-of-type(5){
+.cta-organizations{
     margin: 100px 0;
     display: flex;
     justify-content: space-between;
@@ -287,45 +287,45 @@ section:nth-of-type(5){
 }
 
 
-section:nth-of-type(5) ul{
+.cta-organizations ul{
     list-style-type: disc;
     font-size: 19px;
     line-height: 30px;
     margin-left: 20px;
 }
 
-section:nth-of-type(5) div:nth-of-type(2){
+.cta-organizations div:nth-of-type(2){
     /* border: 1px solid red; */
     margin-top: 30px;
 }
 
 
-section:nth-of-type(5) img{
+.cta-organizations img{
     border-radius: 0 0 100px 0;
 }
 
-section:nth-of-type(5) h2{
+.cta-organizations h2{
     font-size: 25px;
     color: navy;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-section:nth-of-type(5) p{
+.cta-organizations p{
     margin: 20px 0;
 }
 
-section:nth-of-type(5)>p li{
+.cta-organizations>p li{
    
 }
 
-section:nth-of-type(5) h1{
+.cta-organizations h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
     color: navy;
 }
 
 
-section:nth-of-type(5) button{
+.cta-organizations button{
     padding: 15px 30px;
     background-color: navy;
     border-radius: 5px;
@@ -338,31 +338,31 @@ section:nth-of-type(5) button{
 
 
 
-section:nth-of-type(6){
+.become-instructor{
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
 }
 
-section:nth-of-type(6) div:nth-of-type(1){
+.become-instructor div:nth-of-type(1){
     /* border: 1px solid red; */
     margin-top: 60px;
 }
 
 
-section:nth-of-type(6) h2{
+.become-instructor h2{
     font-size: 39px;
     color: navy;
     margin-bottom: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-section:nth-of-type(6) p{
+.become-instructor p{
     font-size: 15px;
     line-height: 30px;
 }
 
-section:nth-of-type(6) button{
+.become-instructor button{
     padding: 15px 30px;
     background-color: navy;
     border-radius: 5px;
@@ -374,7 +374,7 @@ section:nth-of-type(6) button{
 }
 
 
-section:nth-of-type(7){
+.cohort-application{
     text-align: center;
     background-color: hsl(0, 0%, 96%);
     padding: 30px 0;
@@ -382,20 +382,20 @@ section:nth-of-type(7){
 }
 
 
-section:nth-of-type(7) nav{
+.cohort-application nav{
     /* border: 1px solid red; */
     width: 50%;
     margin: auto;
 }
 
-section:nth-of-type(7) nav a{
+.cohort-application nav a{
     text-decoration: none;
     color: black;
     font-weight: 600;
     font-size: 40px;
 }
 
-section:nth-of-type(7) aside{
+.cohort-application aside{
     display: flex;
     /* border: 1px solid red; */
     width: 50%;
@@ -404,22 +404,22 @@ section:nth-of-type(7) aside{
 }
 
 
-section:nth-of-type(7) aside div{
+.cohort-application aside div{
     margin: 0 25px;
     background-color: white;
     padding: 10px 25px;
 }
 
-section:nth-of-type(7) aside div h2{
+.cohort-application aside div h2{
     font-size: 50px;
 }
 
-section:nth-of-type(7) aside div p{
+.cohort-application aside div p{
     font-size: 16px;
     color: hsl(0, 0%, 50%);
 }
 
-section:nth-of-type(7) main button{
+.cohort-application main button{
    padding: 15px 20px;
    color: white;
    background-color: navy;
@@ -430,7 +430,7 @@ section:nth-of-type(7) main button{
 }
 
 
-section:nth-of-type(7) hr{
+.cohort-application hr{
     margin: 20px 0 0 0;
     width: 100%;
     font-size: 40px;
@@ -440,7 +440,7 @@ section:nth-of-type(7) hr{
     background-color: hsl(0, 0%, 50%);
 }
 
-section:nth-of-type(8){
+.why-choose-us{
     display: flex;
     justify-content: space-around;
     padding: 40px 50px;
@@ -448,26 +448,26 @@ section:nth-of-type(8){
     color: white;
 }
 
-section:nth-of-type(8) h4{
+.why-choose-us h4{
     font-size: 28px;
     margin: 20px 0;
     font-weight: 500;
     font-family: italic;
 }
 
-section:nth-of-type(8) p{
+.why-choose-us p{
     font-size: 15px;
     line-height: 25px;
 }
 
 
-section:nth-of-type(9){
+.our-impact{
     background-color: white;
     text-align: center;
     padding: 100px 0;
 }
 
-section:nth-of-type(9) h2{
+.our-impact h2{
     font-size: 53px;
     color: navy;
     line-height: 100px;
@@ -480,75 +480,75 @@ section:nth-of-type(9) h2{
 }
 
 
-section:nth-of-type(9) nav{
+.our-impact nav{
     display: flex;
     justify-content: space-evenly;
 }
 
-section:nth-of-type(9) nav h3{
+.our-impact nav h3{
     font-size: 60px;
 }
 
-section:nth-of-type(9) nav p{
+.our-impact nav p{
     font-size: 16px;
 }
 
-section:nth-of-type(10){
+.success-stories{
     margin-top: 70px;
     text-align: center;
     background-color: white;
 }
 
-section:nth-of-type(10) p{
+.success-stories p{
     font-size: 15px;
     line-height: 25px;
 }
 
-section:nth-of-type(10) h2{
+.success-stories h2{
     font-size: 40px;
     font-weight: 600;
 }
 
-section:nth-of-type(10) h4{
+.success-stories h4{
     font-size: 16px;
     margin-top: 30px;
     line-height: 40px;
 }
 
-section:nth-of-type(10) span{
+.success-stories span{
   font-family: italic,cursive;
   font-size: 14px;
 }
 
-section:nth-of-type(10) img{
+.success-stories img{
     border-radius: 80px;
     margin-bottom: 40px;
 }
 
-section:nth-of-type(10)>div{
+.success-stories>div{
     display: flex;
     justify-content: space-evenly;
     margin: 50px 0;
 }
 
-section:nth-of-type(11){
+.join-community{
     text-align: center;
 }
 
 
-section:nth-of-type(11) h2{
+.join-community h2{
    font-size: 40px;
    font-weight: 900;
    font-family: italic;
 }
 
 
-section:nth-of-type(11) p{
+.join-community p{
   font-size: 16px;
   margin: 25px 0 50px 0;
 }
 
-section:nth-of-type(11) input{
+.join-community input{
     width: 50%;
     padding: 15px;
     margin: 15px 0;
@@ -557,7 +557,7 @@ section:nth-of-type(11) input{
 }
 
 
-section:nth-of-type(11) input:hover{
+.join-community input:hover{
     border: 1px solid yellow;
     background-color: lightblue;
 }
@@ -566,7 +566,7 @@ input::placeholder{
     font-size: 16px;
 }
 
-section:nth-of-type(11) button{
+.join-community button{
     padding: 10px 20px;
     border: none;
     border-radius: 2px;
@@ -575,27 +575,27 @@ section:nth-of-type(11) button{
     margin-right: 42%;
 }
 
-section:nth-of-type(11) button:hover{
+.join-community button:hover{
     background-color: skyblue;
 }
 
-section:nth-of-type(12) td{
+.faq td{
    padding: 20px;
 }
 
-section:nth-of-type(12){
+.faq{
     margin-top: 50px;
     text-align: center;
 }
 
-section:nth-of-type(12) h2{
+.faq h2{
     font-size: 45px;
     line-height: 100px;
     color: hsl(0, 0%, 10%);
     font-family: italic;
 }
 
-section:nth-of-type(12) div button{
+.faq div button{
    width: 60%;
    text-align: left; 
    padding: 15px 16px; 
@@ -603,7 +603,7 @@ section:nth-of-type(12) div button{
    border: 1px solid hsl(0, 0%, 60%);
 }
 
-section:nth-of-type(12) nav button{
+.faq nav button{
     padding: 15px 12px;
     margin: 20px 0;
     font-size: 16px;
@@ -699,14 +699,12 @@ footer figure a i{
     font-size: 20px;
 }
 
+img {
+    max-width: 100%;
+}
 
-
-
-
-/* stoner media querry ipad */
-
-@media (max-width:1024px) {
-
+/* Small Laptops */
+@media (max-width: 1024px) {
     header>div:nth-of-type(2){
         display: none;
     }
@@ -715,493 +713,188 @@ footer figure a i{
         display: block;
     }
 
-
-  header > div:nth-of-type(3){
-    display: block;
-  }
-
-
-    section:nth-of-type(1){
+    .hero{
         padding: 50px 30px 0 0;
     }
 
 
-section:nth-of-type(2)>main div:nth-of-type(3),div:nth-of-type(4) {
-    display: none;
-}
-
-
-section:nth-of-type(2)>main{
-    padding: 0;
-}
-
-section:nth-of-type(2)>main div{
-    width:30%;
-    margin:0 18% 0 2%;
-}
-
-section:nth-of-type(2)>main div h5,p,a{
-    font-size: 30px;
-}
-
-section:nth-of-type(2)>main div img{
-    width: 100%;
-}
-
-
-section:nth-of-type(2)>nav{
-    display: block;
-    padding: 15px 20px;
-}
-
-section:nth-of-type(2)>nav div{
-    margin: 20px 0;
-}
-
-section:nth-of-type(2)>summary{
-    text-align: end;
-    padding: 0;
-}
-
-
-section:nth-of-type(3){
-    margin-top: 50px;
-}
-
-section:nth-of-type(3)>main div{
-    width: 25%;
-    margin: 1%;
-    display: block;
-}
-
-section:nth-of-type(3)>main div img{
-    width:100%;
-}
-
-section:nth-of-type(3)>main div h5{
-  font-size: 25px;
-  font-weight: 400;
-  color: black;
-}
-
-section:nth-of-type(3)>main div p{
-    font-size: 22px;
-    color: hsl(0, 0%, 20%);
-}
-
-section:nth-of-type(3)>nav{
-   padding: 0 50px;
-   display: block;
-}
-
-section:nth-of-type(3)>nav button{
-    margin-top: 20px;
-}
-
-section:nth-of-type(3)>main{
-    padding:0;
-}
-
-
-section:nth-of-type(4){
-    padding: 0 10px;
-    justify-content: space-between;
-}
-
-section:nth-of-type(4) img{
-    border-radius: 15px 15px 15px 120px;
-}
-
-section:nth-of-type(4) h2{
-    font-size: 32px;
-    color: navy;
-}
-
-section:nth-of-type(4) p{
-    font-size: 16px;
-}
-
-section:nth-of-type(4) img{
-    width: 500px;
-}
-
-section:nth-of-type(5){
-    padding: 0 30px;
-    justify-content: space-between;
-}
-
-section:nth-of-type(5) img{
-    border-radius: 15px 15px 15px 120px;
-}
-
-section:nth-of-type(5) h2{
-    font-size: 32px;
-    color: navy;
-}
-
-section:nth-of-type(5) p{
-    font-size: 16px;
-}
-
-section:nth-of-type(5) img{
-    width: 470px;
-}
-
-
-section:nth-of-type(6){
-    padding: 0 30px;
-    justify-content: space-between;
-}
-
-section:nth-of-type(6) h2{
-    font-size: 32px;
-    color: navy;
-}
-
-section:nth-of-type(6) p{
-    font-size: 14px;
-}
-
-section:nth-of-type(6) img{
-    width: 450px;
-}
-
-section:nth-of-type(7) aside div{
-    margin: 0 15px;
-    display: inline-block;
-    background-color: white;
-    padding: 10px 25px;
-}
-
-
-section:nth-of-type(7) aside{
-    padding: 0 19%;
-}
-
-section:nth-of-type(8) img{
-    width: 90%;
-}
-
-section:nth-of-type(8){
-    padding: 40px 20px;
-}
-
-section:nth-of-type(8) h4{
-    font-size: 28px;
-}
-
-section:nth-of-type(8) p{
-    font-size: 13px;
-    line-height: 25px;
-}
-
-
-}
-
-
-
-
-
-/* stoner media querry mobile */
-
-@media (max-width:770px){
-    header button{
+    .popular-courses>main div:nth-of-type(3),.popular-courses>main div:nth-of-type(4) {
         display: none;
     }
 
-      header div:nth-of-type(1){
-        justify-content: space-between;
-        width: 100%;
+
+    .popular-courses>main{
         padding: 0;
+        justify-content: center;
     }
 
-      header{
-        padding: 0 20px 0 10px;
-      }
+    .popular-courses>main div{
+        width:45%;
+        margin: 0 2%;
+    }
 
-    section:nth-of-type(1){
+    .popular-courses>main div h5,
+    .popular-courses>main div p,
+    .popular-courses>main div a {
+        font-size: 24px;
+    }
+
+    .popular-courses>nav{
         display: block;
-        padding: 50px 40px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .popular-courses>summary{
+        text-align: center;
+        padding: 20px 0;
     }
 
 
-    section:nth-of-type(1)::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 120px; /* Height of the fade effect */
-    background: linear-gradient(to bottom, 
-        rgba(37, 99, 235, 0) 0%,
-        rgba(37, 99, 235, 0.1) 40%,
-        rgba(37, 99, 255, 1.0) 100%
-    );
-    border-radius: 0 0 40% 0 / 0 0 90% 90%; /* Creates the curved bottom */
-    pointer-events: none; /* Allows clicking through the overlay */
+    .popular-programmes{
+        margin-top: 50px;
+    }
+
+    .popular-programmes>main {
+        justify-content: center;
+    }
+
+    .popular-programmes>main div{
+        width: 45%;
+        margin: 0 2%;
+    }
+
+    .popular-programmes>nav{
+        padding: 0 50px;
+        display: block;
+        text-align: center;
+    }
+
+    .popular-programmes>nav button{
+        margin-top: 20px;
+    }
+
+
+    .hire-intern{
+        padding: 0 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta-organizations{
+        padding: 0 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .become-instructor{
+        padding: 0 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cohort-application aside{
+        justify-content: center;
+    }
+
+    .why-choose-us{
+        align-items: center;
+    }
 }
 
-     section:nth-of-type(1) img{
-        width: 300px;
-        margin: 20px 0 0 0;
-     }
+/* Tablets and Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .popular-courses>nav,
+    .popular-programmes>nav {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .popular-courses>main,
+    .popular-programmes>main {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular-courses>main div,
+    .popular-programmes>main div {
+        width: 100%;
+        margin: 20px 0;
+    }
 
 
-    section:nth-of-type(1) div h1{
-    font-size: 50px;
-    display: inline;
+    .hire-intern,
+    .cta-organizations,
+    .become-instructor {
+        flex-direction: column;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .cohort-application aside {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .why-choose-us {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .our-impact nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .success-stories>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join-community input {
+        width: 80%;
+    }
+
+    .faq div button {
+        width: 80%;
+    }
+
+    footer nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer figure aside a {
+        margin-left: 0;
+    }
 }
 
-section:nth-of-type(1) nav{
-    text-align: center;
+/* Mobile */
+@media (max-width: 480px) {
+    header div:nth-of-type(1) nav{
+        display: block;
+    }
+
+    header div:nth-of-type(3) {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
 }
-
-section:nth-of-type(2)>main img{
-    width: 200px;
-}
-
-section:nth-of-type(2)>nav{
-   padding: 10px 50px;
-}
-
-section:nth-of-type(2)>main div{
-    width: 45%;
-    margin: 2%;
-}
-
-
-section:nth-of-type(2)>main div img{
-    width: 100%;
-}
-
-section:nth-of-type(2)>main div h5{
-    font-size: 18px;
-    line-height: 15px;
-}
-
-
-section:nth-of-type(2)>main div p span{
-  font-size: 10px;
-  color: hsl(0, 0%, 30%);
-  line-height: normal;
-}
-
-
-section:nth-of-type(2)>main div a{
-  font-size: 15px;
-}
-
-
-section:nth-of-type(3)>main{
-    display:block;
-    padding: 50px;
-}
-
-section:nth-of-type(3)>main div{
-   width: 100%;
-   margin: 20px 0;
-}
-
-
-section:nth-of-type(3)>main div h5{
-   margin: 10px 0;
-}
-
-section:nth-of-type(3)>nav{
-    display: block;
-    padding: 15px 80px;
-}
-
-section:nth-of-type(4){
-    display: block;
-    margin: auto;
-    width: 95%;
-}
-
-section:nth-of-type(4) p{
-    font-size: 15px;
-}
-
-section:nth-of-type(4) img{
-    width: 100%;
-    margin: 50px 0 150px 0;
-}
-
-section:nth-of-type(5){
-    display: block;
-    margin: auto;
-    width: 95%;
-
-}
-
-section:nth-of-type(5) h1{
-    margin: 20px 0;
-    font-size: 50px;
-}
-
-
-section:nth-of-type(5) div:nth-of-type(2){
-    margin-bottom: 150px;
-}
-
-section:nth-of-type(5) img{
-    border-radius: 15px 15px 120px 15px;
-    width: 110%;
-
-}
-
-section:nth-of-type(6){
-    display: block;
-    margin: auto;
-    width: 95%;
-
-}
-
-section:nth-of-type(6) p{
-    font-size: 10px;
-}
-
-section:nth-of-type(6) img{
-    width: 100%;
-    margin: 50px 0 150px 0;
-}
-
-section:nth-of-type(7) nav a{
-    font-size: 25px;
-}
-
-section:nth-of-type(7) nav{
-    width: 100%;
-}
-
-section:nth-of-type(7) aside{
-  padding: 20px 0;
-  width: 100%;
-}
-
-section:nth-of-type(7){
-    width: 100%;
-}
-
-section:nth-of-type(7) aside div{
-    margin: 0 9px;
-    background-color: white;
-    padding: 10px 18px;
-}
-
-
-section:nth-of-type(7) aside div h2{
-    font-size: 30px;
-}
-
-section:nth-of-type(7) aside div p{
-    font-size: 10px;
-}
-
-
-section:nth-of-type(8) img{
-    width: 100%;
-    margin-top: 20px;
-}
-
-section:nth-of-type(8){
-    display: block;
-}
-
-section:nth-of-type(8) h4{
-    font-size: 28px;
-}
-
-section:nth-of-type(8) p{
-    font-size: 15px;
-    line-height: 25px;
-}
-
-section:nth-of-type(9) nav div h3{
-    font-size: 33px;
-}
-
-section:nth-of-type(9) nav div p{
-    font-size: 10px;
-}
-
-
-
-section:nth-of-type(10)>div{
-    display: block;
-}
-
-section:nth-of-type(10)>div div{
-   margin-top: 50px;
-}
-
-section:nth-of-type(10) h4{
-    font-size: 20px;
-    margin-top: 0;
-    line-height: 40px;
-}
-
-section:nth-of-type(10) p{
-    font-size: 20px;
-}
-
-section:nth-of-type(10) span{
-    font-size: 15px;
-}
-
-
-section:nth-of-type(10) img{
-    margin-bottom: 0;
-}
-
-section:nth-of-type(11) button{
-    margin: auto;
-}
-
-
-
-footer nav{
-    display: block;
-    margin-left: 15px;
-}
-  
-footer>figure{
-    display: flex;
-    justify-content: space-around;
-}
-
-footer figure aside a{
-    margin-left: 0%;
-    padding: 8px 0;
-}
-
-footer figure div p{
-    font-size: 15px;
-}
-
-}
-
-/* @media (max-width:412px){
- section:nth-of-type(7) nav a{
-    font-size: 40px;
-}
-
- section:nth-of-type(7) nav{
-    width: 100%;
-    border: 1px solid red;
- }
-
-section:nth-of-type(7) aside{
-  padding: 30px 0;
-  border: 1px solid red;
-  width: 100%;
-}
-
-
-section:nth-of-type(7) aside div{
-    margin: 0 15px;
-    background-color: white;
-    padding: 15px 30px;
-}
-
-} */
